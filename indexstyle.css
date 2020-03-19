@@ -36,16 +36,16 @@ transform: rotate(180deg);
 	left: 15px;
 	bottom: 15px;
 	animation-name: example;
-	animation-duration: 20s;
+	animation-duration: 7s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes example {
-  0%   {left:15px; bottom:15px;}
-  25%  {left:300px; bottom:35px;}
-  50%  {left:790px; bottom:15px;}
-  75%  {left:1100px; bottom:35px;}
-  100% {left:1450px; bottom:15px;}
+  0%   {left:5%; bottom:4%;}
+  25%  {left:10%; bottom:6%;}
+  50%  {left:25%; bottom:4%;}
+  75%  {left:40%; bottom:6%;}
+  100% {left:65%; bottom:4%;}
 }
 
 #rover:hover {
@@ -176,6 +176,64 @@ top: 10px;
 width: 50px;
 height:	50px;
 	
+}
+	
+.clock {
+	width: 240px;
+	height: 240px;
+
+}	
+
+.clock:hover {
+	width: 265px;
+	height: 265px;
+}
+	
+.hour,.hr {
+	width: 130px;
+	height: 130px;
+}
+
+
+.min,.mn {
+	width: 160px;
+	height: 160px;
+}
+
+.sec,.sc {
+	width: 140px;
+	height: 140px;
+}	
+
+
+.hr::before  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 60px;
+	background-color: #848484;
+	z-index: 10;
+	border-radius: 6px 6px 0 0;
+}
+
+.mn::before  {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 70px;
+	background-color: #d6d6d6;
+	z-index: 11;
+	border-radius: 6px 6px 0 0;
+}
+
+.sc::before  {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 120px;
+	background-color: #ff6767;
+	z-index: 12;
+	border-radius: 6px 6px 0 0;
 }
 	
 }
