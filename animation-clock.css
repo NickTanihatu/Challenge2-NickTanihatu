@@ -1,0 +1,271 @@
+* 
+{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #68a4ff;
+}
+
+#sun {
+position: absolute;
+float: left;
+right: 30px;
+top: 30px;
+width: 150px;
+height:	150px;
+transition: width 2s, height 2s, transform 2s;
+	
+/*/ animation: 5000ms pulsate infinite alternate ease-in-out; /*/
+}
+
+#sun:hover {
+transform: rotate(180deg);
+}
+
+#rover {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	animation-name: example;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {left:5%; bottom:4%;}
+  25%  {left:10%; bottom:6%;}
+  50%  {left:25%; bottom:4%;}
+  75%  {left:40%; bottom:6%;}
+  100% {left:65%; bottom:4%;}
+}
+
+#rover:hover {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	transform: rotate(10deg);
+}
+
+
+/*/ onderstaande code specificeert de animatie code 
+
+@keyframes pulsate {
+  0% { 
+  	top: 10px; 
+  }
+  100% { 
+  	top: 75px;
+  }
+}
+/*/
+
+.clock {
+	width: 350px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff url(KlokFinal.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	border: solid #fff;
+	border-top-width: 5px;
+	border-right-width: 10px;
+	border-left-width: 10px;
+	border-bottom-width: 5px;
+}
+
+.clock::before {
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #848484;
+	border: 2px solid #fff;
+	z-index: 1000;
+	border-radius: 50%;
+}
+
+.clock:hover {
+	width: 365px;
+	height: 365px;
+}
+
+
+
+.hour,.min,.sec
+{
+		position:absolute
+	
+}
+	
+.hour,.hr {
+	width: 160px;
+	height: 160px;
+}
+
+
+.min,.mn {
+	width: 190px;
+	height: 190px;
+}
+
+.sec,.sc {
+	width: 230px;
+	height: 230px;
+}
+
+.hr, .mn, .sc {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.hr::before  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 80px;
+	background-color: #848484;
+	z-index: 10;
+	border-radius: 6px 6px 0 0;
+}
+
+.mn::before  {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 90px;
+	background-color: #d6d6d6;
+	z-index: 11;
+	border-radius: 6px 6px 0 0;
+}
+
+.sc::before  {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 150px;
+	background-color: #ff6767;
+	z-index: 12;
+	border-radius: 6px 6px 0 0;
+}
+
+
+/* Responsiveness */ 
+
+@media screen and (max-width: 420px) {
+	
+	#sun {
+position: absolute;
+float: left;
+right: 10px;
+top: 10px;
+width: 50px;
+height:	50px;
+	
+}
+	
+.clock {
+	width: 240px;
+	height: 240px;
+
+}	
+
+.clock:hover {
+	width: 265px;
+	height: 265px;
+}
+	
+.hour,.hr {
+	width: 130px;
+	height: 130px;
+}
+
+
+.min,.mn {
+	width: 160px;
+	height: 160px;
+}
+
+.sec,.sc {
+	width: 140px;
+	height: 140px;
+}	
+
+
+.hr::before  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 60px;
+	background-color: #848484;
+	z-index: 10;
+	border-radius: 6px 6px 0 0;
+}
+
+.mn::before  {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 70px;
+	background-color: #d6d6d6;
+	z-index: 11;
+	border-radius: 6px 6px 0 0;
+}
+
+.sc::before  {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 120px;
+	background-color: #ff6767;
+	z-index: 12;
+	border-radius: 6px 6px 0 0;
+}
+	
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 421px)	{
+	
+	#sun {
+position: absolute;
+float: left;
+right: 10px;
+top: 10px;
+width: 90px;
+height:	90px;
+	
+}
+	
+}
+
+@media screen and (min-width: 769px) {
+	
+	#sun {
+position: absolute;
+float: left;
+right: 50px;
+top: 30px;
+width: 150px;
+height:	150px;
+	
+}
+	
+	
+}
+	
+

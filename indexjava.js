@@ -34,7 +34,7 @@
 	}
 	
 	else if (hour >= 12 && hour < 18) {
-		document.body.style.backgroundColor = "red";
+		document.body.style.backgroundColor = "purple";
 	}
 	
 	else {
