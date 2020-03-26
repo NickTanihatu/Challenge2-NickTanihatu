@@ -1,5 +1,5 @@
 # Challenge2-NickTanihatu
-Challenge 2 gaat over het maken van een geanimeerde klok voor ruimtereizigers op Mars.
+Challenge 2 gaat over het maken van een geanimeerde klok voor ruimtereizigers op Mars - https://nicktanihatu.github.io/Challenge2-NickTanihatu/
 
 Inspiratie voor de analoge klok is van Youtube gehaald: https://www.youtube.com/watch?v=94TKO4eKfIA - klok heb ik zelf wel ontworpen,
 echter werkte de JavaScript-code daarvan niet, dus mijn JS code heb ik zelf geschreven. W3schools heeft me geholpen met de basiscode. Voor hulp ben ik gegaan naar de website Stackoverflow om te kijken welke mensen dezelfde probleme hadden als ik. Daar stonden veel antwoorden op waar ik gebruik van heb kunnen maken.
