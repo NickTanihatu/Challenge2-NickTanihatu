@@ -1,8 +1,7 @@
-* 
-{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+* 	{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -14,19 +13,17 @@ body {
 }
 
 #sun {
-position: absolute;
-float: left;
-right: 30px;
-top: 30px;
-width: 150px;
-height:	150px;
-transition: width 2s, height 2s, transform 2s;
-	
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 150px;
+	height:	150px;
+	transition: width 2s, height 2s, transform 2s;
 /*/ animation: 5000ms pulsate infinite alternate ease-in-out; /*/
 }
 
 #sun:hover {
-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 #rover {
@@ -35,12 +32,12 @@ transform: rotate(180deg);
 	position: absolute;
 	left: 15px;
 	bottom: 15px;
-	animation-name: example;
+	animation-name: horizontale-beweging;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
 }
 
-@keyframes example {
+@keyframes horizontale-beweging {
   0%   {left:5%; bottom:4%;}
   25%  {left:10%; bottom:6%;}
   50%  {left:25%; bottom:4%;}
@@ -49,12 +46,26 @@ transform: rotate(180deg);
 }
 
 #rover:hover {
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	left: 15px;
-	bottom: 15px;
 	transform: rotate(10deg);
+}
+
+#moon {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	width: 150px;
+	height:	150px;
+	animation: 900ms verticale-beweging infinite alternate ease-in-out;
+}
+
+
+@keyframes verticale-beweging {
+  0% { 
+  	top: 20px; 
+  }
+  100% { 
+  	top: 35px;
+  }
 }
 
 
@@ -76,7 +87,7 @@ transform: rotate(180deg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #fff url(KlokFinal.jpg);
+	background: #fff url(afbeeldingen/KlokFinal.jpg);
 	background-size: cover;
 	border-radius: 50%;
 	border: solid #fff;
@@ -86,6 +97,7 @@ transform: rotate(180deg);
 	border-bottom-width: 5px;
 }
 
+/*/ inhoud geven aan de klok /*/
 .clock::before {
 	content: '';
 	position: absolute;
@@ -102,12 +114,8 @@ transform: rotate(180deg);
 	height: 365px;
 }
 
-
-
-.hour,.min,.sec
-{
-		position:absolute
-	
+.hour,.min,.sec {
+	position:absolute;	
 }
 	
 .hour,.hr {
@@ -133,7 +141,7 @@ transform: rotate(180deg);
 	border-radius: 50%;
 }
 
-.hr::before  {
+.hr::before {
 	content: '';
 	position: absolute;
 	width: 8px;
@@ -143,7 +151,7 @@ transform: rotate(180deg);
 	border-radius: 6px 6px 0 0;
 }
 
-.mn::before  {
+.mn::before {
 	content: '';
 	position: absolute;
 	width: 4px;
@@ -153,7 +161,7 @@ transform: rotate(180deg);
 	border-radius: 6px 6px 0 0;
 }
 
-.sc::before  {
+.sc::before {
 	content: '';
 	position: absolute;
 	width: 2px;
@@ -168,20 +176,27 @@ transform: rotate(180deg);
 
 @media screen and (max-width: 420px) {
 	
-	#sun {
-position: absolute;
-float: left;
-right: 10px;
-top: 10px;
-width: 50px;
-height:	50px;
-	
+#sun {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 80px;
+	height:	80px;
 }
+
+#moon {
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	width: 90px;
+	height:	90px;
+}
+
+
 	
 .clock {
 	width: 240px;
 	height: 240px;
-
 }	
 
 .clock:hover {
@@ -206,34 +221,16 @@ height:	50px;
 }	
 
 
-.hr::before  {
-	content: '';
-	position: absolute;
-	width: 8px;
+.hr::before {
 	height: 60px;
-	background-color: #848484;
-	z-index: 10;
-	border-radius: 6px 6px 0 0;
 }
 
-.mn::before  {
-	content: '';
-	position: absolute;
-	width: 4px;
+.mn::before {
 	height: 70px;
-	background-color: #d6d6d6;
-	z-index: 11;
-	border-radius: 6px 6px 0 0;
 }
 
-.sc::before  {
-	content: '';
-	position: absolute;
-	width: 2px;
+.sc::before {
 	height: 120px;
-	background-color: #ff6767;
-	z-index: 12;
-	border-radius: 6px 6px 0 0;
 }
 	
 }
@@ -241,31 +238,27 @@ height:	50px;
 
 @media screen and (max-width: 768px) and (min-width: 421px)	{
 	
-	#sun {
-position: absolute;
-float: left;
-right: 10px;
-top: 10px;
-width: 90px;
-height:	90px;
-	
+#sun {
+	right: 10px;
+	top: 10px;
+	width: 90px;
+	height:	90px;	
+}
+
+#moon {
+	top: 5px;
+	width: 100px;
+	height:	100px;
 }
 	
 }
 
 @media screen and (min-width: 769px) {
 	
-	#sun {
-position: absolute;
-float: left;
-right: 50px;
-top: 30px;
-width: 150px;
-height:	150px;
-	
+#sun {
+	right: 50px;
 }
-	
-	
+		
 }
 	
 
