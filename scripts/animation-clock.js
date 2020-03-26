@@ -20,21 +20,21 @@ function animationClock() {
 	setTimeout(animationClock, 1000); /*/ functie animationClock aanroepen na 1000 ms /*/
 		
 	
-	/*/ ochtend achtergrondkleur en verschijning zon /*/ 
+	/*/ ochtend achtergrondkleur, maan en ster niet laten verschijnen /*/ 
 	if (hour >= 6 && hour < 12) { 
 		document.body.style.backgroundColor = "#68a4ff";
 		document.getElementById("moon").style.display = "none";
 		document.getElementById("star").style.display = "none";
 	}
 	
-	/*/ middag achtergrondkleur en verschijning zon/*/ 
+	/*/ middag achtergrondkleur, maan en ster niet laten verschijnen/*/ 
 	else if (hour >= 12 && hour < 18) {
 		document.body.style.backgroundColor = "#5CBBFC";
 		document.getElementById("moon").style.display = "none";
 		document.getElementById("star").style.display = "none";
 	}
 	
-	/*/ avond achtergrondkleur en verschijning maan/*/ 
+	/*/ avond achtergrondkleur, zon en vogel niet laten verschijnen/*/ 
 	else {
 		document.body.style.backgroundColor = "#131862";
 		document.getElementById("sun").style.display = "none";
