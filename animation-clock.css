@@ -39,10 +39,10 @@ body {
 
 @keyframes horizontale-beweging-rover {
   0%   {left:5%; bottom:4%;}
-  25%  {left:10%; bottom:6%;}
-  50%  {left:25%; bottom:4%;}
-  75%  {left:40%; bottom:6%;}
-  100% {left:65%; bottom:4%;}
+  25%  {left:20%; bottom:6%;}
+  50%  {left:45%; bottom:4%;}
+  75%  {left:70%; bottom:6%;}
+  100% {left:90%; bottom:4%;}
 }
 
 #rover:hover {
@@ -256,7 +256,15 @@ body {
 	height:	90px;
 }
 
+#rover {
+	width: 60px;
+	height: 60px;
+}
 
+#bird {
+	width: 50px;
+	height: 50px;
+}
 	
 .clock {
 	width: 240px;
@@ -297,6 +305,14 @@ body {
 	height: 120px;
 }
 	
+@keyframes horizontale-beweging-rover {
+  0%   {left:5%; bottom:4%;}
+  25%  {left:20%; bottom:6%;}
+  50%  {left:45%; bottom:4%;}
+  75%  {left:60%; bottom:6%;}
+  100% {left:70%; bottom:4%;}
+}	
+	
 }
 
 
@@ -313,6 +329,24 @@ body {
 	top: 5px;
 	width: 100px;
 	height:	100px;
+}
+	
+#rover {
+	width: 70px;
+	height: 70px;
+}	
+
+#bird {
+	width: 65px;
+	height: 65px;
+}
+
+@keyframes horizontale-beweging-rover {
+  0%   {left:5%; bottom:4%;}
+  25%  {left:20%; bottom:6%;}
+  50%  {left:45%; bottom:4%;}
+  75%  {left:70%; bottom:6%;}
+  100% {left:80%; bottom:4%;}
 }
 	
 }
