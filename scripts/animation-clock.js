@@ -22,20 +22,23 @@ function animationClock() {
 	
 	/*/ ochtend achtergrondkleur en verschijning zon /*/ 
 	if (hour >= 6 && hour < 12) { 
-		document.body.style.backgroundColor = "black";
+		document.body.style.backgroundColor = "#68a4ff";
 		document.getElementById("moon").style.display = "none";
+		document.getElementById("star").style.display = "none";
 	}
 	
 	/*/ middag achtergrondkleur en verschijning zon/*/ 
 	else if (hour >= 12 && hour < 18) {
-		document.body.style.backgroundColor = "#68a4ff";
+		document.body.style.backgroundColor = "#5CBBFC";
 		document.getElementById("moon").style.display = "none";
+		document.getElementById("star").style.display = "none";
 	}
 	
 	/*/ avond achtergrondkleur en verschijning maan/*/ 
 	else {
 		document.body.style.backgroundColor = "#131862";
 		document.getElementById("sun").style.display = "none";
+		document.getElementById("bird").style.display = "none";
 	}
 	
 };

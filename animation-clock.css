@@ -32,12 +32,12 @@ body {
 	position: absolute;
 	left: 15px;
 	bottom: 15px;
-	animation-name: horizontale-beweging;
+	animation-name: horizontale-beweging-rover;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
 }
 
-@keyframes horizontale-beweging {
+@keyframes horizontale-beweging-rover {
   0%   {left:5%; bottom:4%;}
   25%  {left:10%; bottom:6%;}
   50%  {left:25%; bottom:4%;}
@@ -49,17 +49,81 @@ body {
 	transform: rotate(10deg);
 }
 
+#bird {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 100%;
+	top: 25px;
+	animation: vliegen 8s infinite;
+}
+
+@keyframes vliegen {
+	0%{
+	left: 0%;
+	top: 10px;
+	}
+	15%{
+	left: 5%;
+	top: 20px;
+	}
+	30%{
+	left: 10%;
+	top: 10px;
+	}
+	45%{
+	left: 15%;
+	top: 20px;
+	}
+	60%{
+	left: 20%;
+	top: 10px;
+	}
+	75%{
+	left: 25%;
+	top: 20px;
+	}
+	90%{
+	left: 30%;
+	top: 10px;
+	}
+	100%{
+	left: 0%;
+	top: 20px;
+	}
+	
+}
+
+#star {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 100px;
+	height:	100px;
+	animation: 1000ms verticale-beweging-star infinite alternate ease-in-out;
+}
+
+@keyframes verticale-beweging-star {
+  0% { 
+  	top: 20px; 
+  }
+  100% { 
+  	top: 25px;
+  }
+}
+
+
 #moon {
 	position: absolute;
 	left: 30px;
 	top: 30px;
 	width: 150px;
 	height:	150px;
-	animation: 900ms verticale-beweging infinite alternate ease-in-out;
+	animation: 900ms verticale-beweging-moon infinite alternate ease-in-out;
 }
 
 
-@keyframes verticale-beweging {
+@keyframes verticale-beweging-moon {
   0% { 
   	top: 20px; 
   }
